@@ -17,7 +17,7 @@ public class WebFingerController : ControllerBase
                 new
                 {
                     rel = "http://openid.net/specs/connect/1.0/issuer",
-                    href = "https://sivertheisholt.no"
+                    href = "https://auth.sivertheisholt.no"
                 }
             }
     };
