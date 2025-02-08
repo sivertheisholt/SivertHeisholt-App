@@ -14,4 +14,4 @@ WORKDIR /App
 COPY --from=build /App/out .
 ENV PORT=8080
 EXPOSE ${PORT}
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
+ENTRYPOINT ["dotnet", "SivertHeisholt.Api.dll"]
