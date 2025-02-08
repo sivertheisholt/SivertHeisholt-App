@@ -12,4 +12,6 @@ RUN dotnet publish -o out
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /App
 COPY --from=build /App/out .
+ENV PORT=8080
+EXPOSE ${PORT}
 ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
